@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url(../img/baground.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section{
+	width: 350px;
+	height: 420px;
+	/* background-color: yellowgreen; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	border: 2px solid #fff;
+}
+
+h2{
+	text-align: center;
+	font-size: 2em;
+}
+
+.input-box{
+	position: relative;
+	margin: 30px 0px;
+	width: 300px;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+}
+
+.input-box label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	font-size: 1em;
+	color: #fff;
+	transform: translateY(-50%);
+	pointer-events: none;
+	transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+	top:-5px;
+}
+
+.input-box input{
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: none;
+	color: #fff;
+	font-size: 1em;
+	outline: none;
+	padding: 0px 30px 0px 5px;
+}
+
+.input-box .icon{
+	position: absolute;
+	right: 8px;
+	top: 35%;
+}
+
+.remember_forgot{
+	margin: -15px 0px 15px;
+	font-size: 1em;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.remember_forgot input{
+	margin-right: 5px;
+}
+.remember_forgot a {
+	color: #fff;
+}
+
+button{
+	color: #000;
+	width: 100%;
+	height: 40px;
+	border-radius: 25px;
+	border: 0px;
+	cursor: pointer;
+	margin-bottom: 25px;
+}
+
+
